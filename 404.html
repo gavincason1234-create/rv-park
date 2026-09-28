@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found | Harvest Moon RV Park</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231B2540'/%3E%3Ccircle cx='32' cy='28' r='15' fill='%23E9C46A'/%3E%3Cpath d='M0 48Q16 40 32 46T64 44V64H0Z' fill='%23141B30'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap">
+<style>
+:root {
+  --color-cream:     #FBF6EC;
+  --color-sand:      #F1E7D3;
+  --color-white:     #FFFFFF;
+  --color-ink:       #2B2118;
+  --color-muted:     #5C4B3B;
+  --color-moss:      #3E5C3A;
+  --color-rust:      #9A3F14;
+  --color-gold:      #E9C46A;
+  --color-navy:      #1B2540;
+  --color-plum:      #3E2F4A;
+  --color-deep-gold: #7A4F0C;
+  --color-night:     #141B30;
+  --color-maria:     #D9AE4E;
+  --color-flag:      #FFE9A8;
+  --color-line:      #D9CDBB;
+
+  --font-heading: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --text-sm: 0.875rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.25rem;
+  --text-h3: 1.25rem;
+  --text-h2: clamp(1.625rem, 1.2rem + 1.8vw, 2.125rem);
+  --text-h1: clamp(2rem, 1.2rem + 3.6vw, 3.25rem);
+  --leading-body: 1.55;
+  --leading-tight: 1.08;
+
+  --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem;
+  --space-5: 1.5rem; --space-6: 2rem; --space-7: 3rem; --space-8: 5rem;
+  --radius: 6px;
+  --radius-pill: 999px;
+  --shadow-soft: 0 2px 8px rgba(43, 33, 24, .08);
+  --container: 72rem;
+  --measure: 68ch;
+  --gutter: 1rem;
+  --header-h: 56px;
+  --horizon-h: 110px;
+}
+@media (min-width: 48em) { :root { --gutter: 1.5rem; --text-base: 1.125rem; --header-h: 64px; } }
+@media (min-width: 64em) { :root { --horizon-h: 160px; } }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { color-scheme: light; background: var(--color-navy); }
+.p404 {
+  margin: 0; background: var(--color-navy); color: var(--color-cream);
+  font-family: var(--font-body); font-size: var(--text-base); line-height: var(--leading-body);
+}
+.p404 main {
+  margin: 0 auto; max-width: 36rem; min-height: 100vh;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  padding: var(--space-8) var(--gutter);
+}
+.p404__moon { width: 160px; height: 160px; margin-bottom: var(--space-4); }
+.eyebrow { margin: 0 0 var(--space-3); font: 700 var(--text-sm)/1.3 var(--font-body); text-transform: uppercase; letter-spacing: .08em; color: var(--color-gold); }
+h1 { margin: 0 0 var(--space-4); font-family: var(--font-heading); font-weight: 600; font-size: var(--text-h1); line-height: var(--leading-tight); letter-spacing: -0.01em; font-optical-sizing: auto; }
+p { margin: 0 0 var(--space-5); }
+.p404__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .625rem; }
+[hidden] { display: none !important; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 48px; padding: .75rem 1.25rem; border: 1.5px solid transparent; border-radius: var(--radius); font: 700 1rem/1.2 var(--font-body); text-decoration: none; text-align: center; cursor: pointer; }
+.btn--gold { background: var(--color-gold); border-color: var(--color-gold); color: var(--color-ink); }
+.btn--gold:hover { background: #DDB456; border-color: #DDB456; color: var(--color-ink); }
+.btn--ghost { background: transparent; border-color: var(--color-cream); color: var(--color-cream); }
+.btn--ghost:hover { background: rgba(251,246,236,.12); color: var(--color-cream); }
+:focus-visible { outline: 3px solid var(--color-moss); outline-offset: 2px; }
+.p404 :focus-visible { outline-color: var(--color-gold); }
+</style>
+</head>
+<body class="p404">
+<main>
+  <svg class="p404__moon" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="moon-halo">
+        <stop offset="55%" stop-color="#E9C46A" stop-opacity=".28"/>
+        <stop offset="100%" stop-color="#E9C46A" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <circle cx="100" cy="100" r="100" fill="url(#moon-halo)"/>
+    <circle cx="100" cy="100" r="62" fill="#E9C46A"/>
+    <ellipse cx="82" cy="88" rx="14" ry="9" fill="#D9AE4E" opacity=".55"/>
+    <ellipse cx="112" cy="116" rx="18" ry="11" fill="#D9AE4E" opacity=".45"/>
+    <circle cx="120" cy="80" r="6" fill="#D9AE4E" opacity=".5"/>
+  </svg>
+  <p class="eyebrow">Harvest Moon RV Park</p>
+  <h1>That page wandered off.</h1>
+  <p>Harvest Moon is a small place, and everything about it is on one page.</p>
+  <div class="p404__actions">
+    <a id="home-link" class="btn btn--gold" href="./">Back to the front page</a>
+    <a id="call-link" class="btn btn--ghost" href="./#contact" hidden>Call</a>
+  </div>
+</main>
+
+<script src="./site-config.js"></script>
+<script>
+(function () {
+  var home = document.getElementById('home-link');
+  var seg = location.pathname.split('/').filter(Boolean);
+  if (/\.github\.io$/i.test(location.hostname) && seg.length > 1) { home.href = '/' + seg[0] + '/'; }
+  var cfg = window.SITE_CONFIG, btn = document.getElementById('call-link');
+  if (!cfg || !btn) { return; }
+  var d = String(cfg.phone || '').replace(/\D/g, '');
+  if (d.length === 11 && d.charAt(0) === '1') { d = d.slice(1); }
+  if (!d) { return; }
+  var display = d.length === 10 ? '(' + d.slice(0, 3) + ') ' + d.slice(3, 6) + '-' + d.slice(6) : String(cfg.phone);
+  btn.href = 'tel:' + (d.length === 10 ? '+1' + d : d);
+  btn.textContent = 'Call ' + display;
+  btn.hidden = false;
+})();
+</script>
+</body>
+</html>
